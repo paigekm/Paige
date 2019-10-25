@@ -1,0 +1,401 @@
+<! DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset='UTF-8'/>
+<title id="home"> Mt KauKau webpage </title>  
+<link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+        
+</head>
+    
+<style>
+    
+    body{
+        
+        font-size:100%;
+        background-color: rgb(226, 237, 246); /* -- 241 --*/
+        font-family: 'Tajawal', sans-serif;
+        
+    }
+    
+    h1{
+        margin:0;
+        letter-spacing: 5px;
+    }
+    
+    
+    h3{
+        letter-spacing: 5px;
+    }
+    
+    p{
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+    }
+    
+/* ----------------------- layout section ------------------------ */    
+
+/* this type of comment is just inside style */
+/* create a class */
+.mainBox{
+        /* -- parent div -- */
+        /*border box prevents the div expanding with border widths and padding*/
+        background-color: rgb(226, 237, 241);
+        border: 1%;
+        border-color: rgb(255,255,255);
+        width:90%;
+        margin: auto;
+    /* -- makes parent div recognise children again -- */
+        overflow: hidden;
+}
+
+    
+    
+/* ----------------------- image styles -------------------------- */
+
+.img-responsive{
+    max-width: 100%;
+    border-radius:50;
+    
+}
+    
+.img-routes-responsive{
+        border-radius:50;
+        max-width:100%;
+    }
+
+    
+/* -- header and footer styles ------------------------------------ */
+    
+    .header{
+        padding: 0%;
+        text-align:center;
+        background-color: white; 
+        margin-bottom:5%;
+        margin-top:5%;
+    }
+    
+    .footer{
+        padding: 0%;
+        text-align:center;
+        background-color:rgb(200,200,200);
+    }
+
+    
+/* -- nav bar ---------------------------------------------------------------------------------------------------------------- */
+    
+    .nav{
+        list-style:none;
+        margin:0px;
+    }
+    
+/* -- targets list elements in nav ----------- */  
+    
+    .nav li{
+        display:inline;        
+    }
+    
+/* ---- targets the a after the href -----------*/
+    
+    .nav li a{
+        padding-right:15px;
+        padding-left:15px;
+        /* -- font styling for the letters on the list, goes here -- */
+        margin-left:5px;
+    }
+    
+/* ----- links states - link,visited,active,hover -- */
+/* --- a is a tag we are directly accessing. acess a class -made it myself- with .nav etc -- */
+    
+    a:link{
+        text-decoration:none;
+        background-color:rgb(255,255,255);
+        color:rgb(255,255,255);
+    }
+    
+/* -- colour it will turn when visited ----- */
+    
+    a:visited{
+        color:rgb(0,0,0);
+    }
+       
+/* -- preview when you put mouse over it ----- */
+    a:hover{
+        background-color: rgb(176,224,230);
+        color:rgb(0,0,0);
+    }
+
+/* --- more official looking nav bar ------ */
+    
+    .container{
+        background-color:rgb(255,255,255);
+        padding-top:2.5%;
+        padding-bottom:2.5%;
+        font-size; 
+        text-align:center;
+        width:100%;
+    }
+    
+
+/* --- sticky nav ------ */
+    
+    
+    .content {
+  padding: 16px;
+}
+    
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+    
+    .sticky + .content {
+  padding-top: 60px;
+}
+    
+    
+/* --- other -------------------------------------------------------------------------- */    
+
+    .routes1{
+        background-color:rgb(255,255,255);
+        font-size; 
+        text-align;
+        float:left;
+        box-sizing:border-box;
+        width:25%;
+        height:auto;
+        padding:1%;
+        overflow:hidden;
+        
+    }
+    
+    .routes2{
+        background-color:rgb(255,255,255);
+        font-size; 
+        text-align;
+        float:right;
+        box-sizing:border-box;
+        width:25%;
+        height:auto;
+        padding:1%;
+        overflow:hidden;
+    }
+    
+    .routes3{
+        background-color:rgb(255,255,255);
+        font-size; 
+        text-align;
+        float:left;
+        box-sizing:border-box;
+        width:25%;
+        height:auto;
+        padding:1%;
+        overflow:hidden;
+    }
+    
+    .routes4{
+        background-color:rgb(255,255,255);
+        font-size; 
+        text-align;
+        float:right;
+        box-sizing:border-box;
+        width:25%;
+        height:auto;
+        padding:1%;
+        overflow:hidden;
+    }
+    
+    
+    .weatherleft{
+        background-color:rgb(255,255,255);
+        font-size; 
+        text-align;
+        float:left;
+        box-sizing:border-box;
+        width:50%;
+        height:auto;
+        padding:1%;
+        overflow:hidden;
+    }
+    
+    .weatherright{
+        background-color:rgb(255,255,255);
+        font-size; 
+        text-align;
+        float:right;
+        box-sizing:border-box;
+        width:50%;
+        height:auto;
+        padding:1%;
+        overflow:hidden;
+    }
+    
+/* ------------------------------------------*/
+    
+        
+</style>
+    
+<body>
+
+    
+<div class="header">
+    
+<h1>Mt Kau Kau</h1>    
+</div>
+    
+<div class="container">
+<ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features to Spot from the top</a></li>
+    <li><a href="#weather">Weather</a></li>
+    <li><a href="#routes">Getting there</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+</ul>    
+</div>
+    
+<br><br>
+    
+
+
+<!-- Features ---------------------------------------------------------->  
+<div class=mainBox>
+<h2 id="features">Features to spot from the top</h2>
+</div>
+    
+    <div class=mainBox>
+    
+        <img class="img-responsive" src="images/picnic_table.jpg" alt="This is a panoranic photo of the view of the South Island, just one of the features, you can see from the top of Mt Kaukau.">
+    
+        <h5>Panoranic view of the South Island, just one of the features, you can see from the top of Mt Kaukau.</h5>
+        
+        <p>
+        The summit of Mount Kaukau lies at an elevation of about 430 meters (1,411 ft) above sea level and offers scenic views of Wellington City and Wellington Harbour, the South Island, and the eastern hills. The city, harbour and the Remutaka and Tararua Ranges can be seen from the summit. On a clear day Mt. Tapuae-o-Uenuku and the Kaikoura Ranges in the South Island may be seen, whilst northwest is the Porirua Basin and the Tasman Sea.<br> <br>
+        The Mount Kaukau walk is the second walk after the Mount Victoria lookout walk, that I would recommend doing if you are short on time, but would still like to get some of the best views. It gives a good overview of many of the characteristic features of Wellington such as its hills, its harbor, views of the South Island, and views of wind turbines.  
+        </p>
+    
+    </div>
+
+    
+<!-- Weather ----------------------------------------------------------->
+ 
+<div class=mainBox>
+    <h2 id="weather">Weather</h2> 
+    <h5>Real time weather conditions at the top of Mt Kaukau, compared to Khandallah</h5>
+</div>
+    
+    <div class=mainBox>
+        
+        <div class=weatherleft>
+    
+        <a href="https://weather.com/weather/today/l/-41.24,174.79?par=google&temp=c" title="Click me to go to website showing today's weather in Khandallah" target="_blank">Current weather in Khandallah</a> <br>
+            
+        <img class="img-responsive" src="images/khandallah_weather_img.jpg" alt="This is a photo of weather report for Khandallah">
+            
+        </div>
+    
+    
+        <div class=weatherright>
+        <a href="https://weather.com/weather/today/l/-41.23,174.78?par=google&temp=c" title="Click me to go to website showing today's weather at top of Mt Kaukau" target="_blank">Current weather at top of Mt Kaukau</a> <br>
+            
+        <img class="img-responsive" src="images/mtkaukau_weather_img.jpg" alt="This is a photo of weather report for summit of Mt Kaukau">
+            
+        </div>
+    
+    <br>
+    <p>
+    Summer may be the best season for good weather, but if you want to see snow on the Kaikoura Range on the South Island, which is visible from Mount Kaukau, winter or spring would be better. Just keep in mind that the ground can get slippery then.
+
+    While the initial part of the trail goes through a forest, the summit of Mount Kaukau is completely exposed to the elements, so the best time to walk up would be on a brilliantly sunny day with little to no wind. In addition, the trail can get muddy after a period of heavy rain, so if rain has fallen, wait a couple of days before you do the walk so that the trail can dry out a bit. 
+
+    Morning hours are good for light on the South Island and views to the west toward the top of the South Island. Afternoon hours are good for light on the city, the harbor, and the hills in the east.<br> <br> </p>  
+        
+    </div>   
+    
+<!-- Routes ------------------------------------------------------------>   
+<div class=mainBox>   
+    <h2 id="routes">Getting there</h2>
+    
+    <p>Much of the eastern 'city side' slopes of Mount Kaukau make up Khandallah Park, which is one of the oldest parks in New Zealand, established in 1888 and then registered as a domain in 1909.[3] Khandallah Park has more than 60 hectares of native forest. Native birds such as the kereru, tui and fantail are common sights when walking through the native forest. Stumps of the old totara trees can also be seen walking through the first lower parts of the forest.Mount Kaukau forms part of the Northern Skyline track from Johnsonville to Karori and Makara.<br><br>
+
+    </p>
+    </div>
+    
+<div class=mainBox>
+   
+    <div class=routes1>    
+        <img class="img-responsive" src="images/clark_st.jpg" alt="This is an image of the Clark St entrance to Mt Kaukau">
+        <h5>Clark St entrance to Mt Kaukau summit</h5>
+        <p>Trail length:	3.3 km (2 mi) return from the entrance on Simla Crescent in Khandallah. <br>
+        Walking time:	1 hour 10 minutes return <br>
+        Difficulty:	Medium to hard <br>
+        Trail type:	Gravel and dirt trail that goes through bush up a hill. There are steps in some places to make it easier to get up the hill. <br>
+        Trail condition:	Good and well maintained but can get muddy or slippery after periods of heavy rain. <br>
+        Fitness level:	Moderate to high. 
+        </p>
+    </div>
+    
+    <div class=routes2>
+        <img class="img-responsive" src="images/clark_st.jpg" alt="This is an image of the Woodmancote Rd entrance to Mt Kaukau">
+        <h5>Woodmancote Rd entrance to Mt Kaukau</h5>
+        <p> Trail length:	3.3 km (2 mi) return from the entrance on Simla Crescent in Khandallah. <br>
+        Walking time:	1 hour 10 minutes return <br>
+        Difficulty:	Medium to hard <br>
+        Trail type:	Gravel and dirt trail that goes through bush up a hill. There are steps in some places to make it easier to get up the hill. <br>
+        Trail condition:	Good and well maintained but can get muddy or slippery after periods of heavy rain. <br>
+        Fitness level:	Moderate to high. </p>
+    </div>
+    
+    <div class=routes3>
+        <img class="img-responsive" src="images/clark_st.jpg" alt="This is an image of the Simla Cres entrance to Mt Kaukau">
+        <h5>Simla Cres entrance to Mt Kaukau</h5>
+        <p> Trail length:	3.3 km (2 mi) return from the entrance on Simla Crescent in Khandallah. <br>
+        Walking time:	1 hour 10 minutes return <br>
+        Difficulty:	Medium to hard <br>
+        Trail type:	Gravel and dirt trail that goes through bush up a hill. There are steps in some places to make it easier to get up the hill. <br>
+        Trail condition:	Good and well maintained but can get muddy or slippery after periods of heavy rain. <br>
+        Fitness level:	Moderate to high. </p>
+    </div>
+        
+    <div class=routes4>
+        <img class="img-responsive" src="images/clark_st.jpg" alt="This is an image of the Truscott Ave entrance to Mt Kaukau">
+        <h5>Truscott Ave entrance to Mt Kaukau</h5> 
+        <p> Trail length:	3.3 km (2 mi) return from the entrance on Simla Crescent in Khandallah. <br>
+        Walking time:	1 hour 10 minutes return <br>
+        Difficulty:	Medium to hard <br>
+        Trail type:	Gravel and dirt trail that goes through bush up a hill. There are steps in some places to make it easier to get up the hill. <br>
+        Trail condition:	Good and well maintained but can get muddy or slippery after periods of heavy rain. <br>
+        Fitness level:	Moderate to high.</p>
+    </div>
+</div>
+
+
+<!-- Gallery ----------------------------------------------------------->
+ 
+    <div class=mainBox>
+<h2 id="gallery">Gallery</h2>
+
+<img class="img-responsive" src="images/tower_1.jpg" alt="This is an image of an orange sunset behind Mt KauKau. The photo was taken from my house.">
+    
+<h5>Scenic views from the top of Mt Kaukau</h5>
+<p>
+"I love the views once you reach the top of Mount Kaukau. This is a steep, uphill walk up a number of steps but will take you less than 1 hour. A great walk for a city lighting the great variety and diversity in Wellington city."
+    
+"Mt Kaukau offers splendid 360 degree views near Wellington.
+A climb to the 445m summit takes around 45 minutes at a reasonable pace and is well worth the effort!
+From the top, one is greeted with views of the sparkling harbour, the wind turbines to the west and the surrounding hillside.
+From the summit there are options to continue North to Johnsonville or South along the Skyline walkway that could take you as far as Karori.
+Very highly recommended and well worth an adventure!"
+
+</p>
+    
+    
+   
+<div class="footer">
+<h6>&copy; Paige Martin 2019</h6>  
+<h6>&copy; http://www.newzealandtravelinsider.com/day-walks/mount-kaukau-walk-wellington-new-zealand.htm</h6>
+<h6>&copy; https://en.wikipedia.org/wiki/Mount_Kaukau</h6>
+</div>
+        
+</body>
+</html>
