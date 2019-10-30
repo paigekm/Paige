@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     
 <head>
@@ -35,6 +35,19 @@
     
 /* ----------------------- layout section ------------------------ */    
 
+    
+.imageBox{
+        /* -- parent div -- */
+        /*border box prevents the div expanding with border widths and padding*/
+        background-color: rgb(226, 237, 241);
+        border-color: rgb(255,0,255);
+        max-width: 100%;
+    /* -- makes parent div recognise children again -- */
+        overflow: hidden;
+        display:block;
+}
+    
+    
 /* this type of comment is just inside style */
 /* create a class */
 .mainBox{
@@ -50,13 +63,16 @@
 }
 
     
-    
 /* ----------------------- image styles -------------------------- */
 
 .img-responsive{
     max-width: 100%;
     
 }
+    
+.img-heading{
+    max-width: 400%;
+    }
     
 .img-routes-responsive{
         border-radius:50%;
@@ -87,12 +103,14 @@
         list-style:none;
         margin:0px;
         position:fixed;
+        padding: 0;
         background-color:rgb(255,255,255);
         padding-top:2.5%;
         padding-bottom:2.5%;
-        font-size; 
+        top:0;
         text-align:center;
         width:100%;
+        
     }
     
 /* -- targets list elements in nav ----------- */  
@@ -108,6 +126,10 @@
         padding-left:15px;
         /* -- font styling for the letters on the list, goes here -- */
         margin-left:5px;
+    }
+    
+    .my-heading{
+        font-size:300%;
     }
     
 /* ----- links states - link,visited,active,hover -- */
@@ -244,19 +266,12 @@
 </style>
     
 <body>
-
-    
-<div class="header">
-    
-<h1 id="home">Mt Kau Kau</h1>    
-</div>
     
 <div class="container">
 <ul class="nav">
     <li><a href="#home">Home</a></li>
-    <li><a href="#features">Features to Spot from the top</a></li>
-    <li> <h3>Mt Kaukau</h3></li>
     <li><a href="#weather">Weather</a></li>
+    <li><span id="home" class="my-heading"> Mt Kaukau </span></li>
     <li><a href="#routes">Getting there</a></li>
     <li><a href="#gallery">Gallery</a></li>
 </ul>    
@@ -268,13 +283,10 @@
 
 
 <!-- Features ---------------------------------------------------------->  
-<div class=mainBox>
-<h2 id="features">Features to spot from the top</h2>
-</div>
+
+<div class=imageBox>
     
-    <div class=mainBox>
-    
-        <img class="img-responsive" src="images/picnic_table.jpg" alt="This is a panoranic photo of the view of the South Island, just one of the features, you can see from the top of Mt Kaukau.">
+        <img class="img-heading" src="images/header_img.jpg" alt="This is a panoranic photo of the view of the South Island, just one of the features, you can see from the top of Mt Kaukau.">
     
         <h5>Panoranic view of the South Island, just one of the features, you can see from the top of Mt Kaukau.</h5>
         
@@ -291,7 +303,7 @@
 <!-- Weather ----------------------------------------------------------->
  
 <div class=mainBox>
-    <h2 id="weather">Weather</h2> 
+    <h1 id="weather">Weather</h1> 
     <h5>Real time weather conditions at the top of Mt Kaukau, compared to Khandallah</h5>
 </div>
     
@@ -329,11 +341,11 @@
         
     </div>   
     
-<hr>
+<hr id="routes">
     
 <!-- Routes ------------------------------------------------------------>   
 <div class=mainBox>   
-    <h2 id="routes">Getting there</h2>
+    <h1>Getting there</h1>
     
     <p>Much of the eastern 'city side' slopes of Mount Kaukau make up Khandallah Park, which is one of the oldest parks in New Zealand, established in 1888 and then registered as a domain in 1909. <br>Khandallah Park has more than 60 hectares of native forest. Native birds such as the kereru, tui and fantail are common sights when walking through the native forest. Stumps of the old totara trees can also be seen walking through the first lower parts of the forest. <br>Mount Kaukau forms part of the Northern Skyline track from Johnsonville to Karori and Makara. From the summit there are options to continue North to Johnsonville or South along the Skyline walkway that could take you as far as Karori.<br><br>
 
@@ -388,12 +400,12 @@
     </div>
 </div>
 
-<hr>
+<hr id="gallery">
     
 <!-- Gallery ----------------------------------------------------------->
  
     <div class=mainBox>
-<h2 id="gallery">Gallery</h2>
+<h1>Gallery</h1>
 
 <div class="galcol">
     <img class="img-responsive" src="images/tower_1.jpg" alt="This is an image of an orange sunset behind Mt KauKau. The photo was taken from my house.">
